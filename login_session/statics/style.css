@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+	0% { background: linear-gradient(135deg, #f0f0f0, #dcdcdc); }
+	50% { background: linear-gradient(135deg, #dcdcdc, #f0f0f0); }
+	100% { background: linear-gradient(135deg, #f0f0f0, #dcdcdc); }
+}
+
+.container {
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(10px);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styles */
+p {
+	font-size: 1.2em;
+	color: #333;
+	margin-bottom: 20px;
+	transition: color 0.3s ease;
+}
+
+p:hover {
+	color: #555;
+}
+
+/* Link styles */
+a.fortune-link {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #007BFF;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.fortune-link:hover {
+	background-color: #0056b3;
+	transform: scale(1.1);
+}
